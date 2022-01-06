@@ -22,6 +22,7 @@ Feature
 - Data like queston & answer from Opentb API
 - Use Redux
 - Add a voice & vibration
+- Change Logo
 
 
 Installation
