@@ -1,7 +1,12 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
+import { useDispatch, useSelector } from 'react-redux';
 import HomeImage from '../asset/homeImage.svg'
 export default function Home({navigation}) {
+   
+    const score = useSelector(state => state.score);
+
+    console.log(`home ${score}`)
     return (
         <View style={{flex : 1, backgroundColor : '#073b4c', display : 'flex', alignItems : 'center', justifyContent : 'center'}}>
             <Text style={{color : '#ff9e00', fontWeight : 'bold', fontSize : 80}}>Quizly</Text>

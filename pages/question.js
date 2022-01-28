@@ -12,11 +12,13 @@ import {useSelector, useDispatch} from 'react-redux'
 const Question = ({question, index, navigation, setUpdate}) => {
 
   const score = useSelector(state => state.score)
+  console.log(score)
   const dispatch = useDispatch()
   const [answer, setAnswer] = useState('');
   const [isAnswer, setIsAnswer] = useState(false);
   
   function shuffle(array) {
+   
     let currentIndex = array.length,
       randomIndex;
 

@@ -25,7 +25,7 @@ const Score = ({navigation, setUpdate}) => {
       </Text>
       <TouchableOpacity
       onPress={() => {
-        dispatch({ type : 'REMOVE_SCORE' })
+        dispatch({ type : 'RESET_SCORE' })
         navigation.navigate('home')
         setUpdate(prev => prev === false ? true : false)
       }}
@@ -41,6 +41,7 @@ const Score = ({navigation, setUpdate}) => {
       </TouchableOpacity>
       <TouchableOpacity
       onPress={() => {
+        dispatch({ type : 'RESET_SCORE' })
         navigation.navigate('home')
         setUpdate(prev => prev === false ? true : false)
       }}
